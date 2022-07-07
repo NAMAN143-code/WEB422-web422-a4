@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
+  
+  myPhoto : string = "./circle-croppednaman.png"
   constructor() { }
 
   ngOnInit(): void {

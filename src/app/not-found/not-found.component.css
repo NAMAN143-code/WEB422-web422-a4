@@ -25,6 +25,12 @@
   .olhos{animation: olhos   2s  alternate  infinite;
      transform-origin: center;
   }
+
+  .error{
+    font-size: 200%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  }
   @keyframes scales{
     from { transform: scale(0.98)}
     to{ transform: scale(1)}
