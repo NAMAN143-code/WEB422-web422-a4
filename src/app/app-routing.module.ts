@@ -9,9 +9,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {path: 'about', component: AboutComponent},
-  {path: 'artist', component:ArtistDiscographyComponent},
+  {path: 'artist/:id', component:ArtistDiscographyComponent},
   {path: 'newReleases', component: NewReleasesComponent},
-  {path: 'album', component:AlbumComponent},
+  {path: 'album/:id', component:AlbumComponent},
   {path: '', component:NewReleasesComponent},
   {path: '**', component:NotFoundComponent}
 ];

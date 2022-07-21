@@ -23,6 +23,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { NewReleasesComponent } from './new-releases/new-releases.component';
 import { AlbumComponent } from './album/album.component';
 import { ArtistDiscographyComponent } from './artist-discography/artist-discography.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -49,7 +52,7 @@ import { ArtistDiscographyComponent } from './artist-discography/artist-discogra
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule, HttpClientModule, FormsModule, MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

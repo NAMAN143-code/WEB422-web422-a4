@@ -5,17 +5,17 @@
     <div class="fxlayout">
  
        <!-- Single "Responsive" Card-->
-       <div class="fxflex" [style.margin]="'20px'" *ngFor="let item of releases">
+       <div class="fxflex" [style.margin]="'20px'" *ngFor="let item of releases.albums.items">
            <mat-card [style.min-width]="'200px'">
                <mat-card-header>
                    <mat-card-title>{{item.name}}</mat-card-title>
                    <mat-card-subtitle>New Release</mat-card-subtitle>
                </mat-card-header>
-               <img mat-card-image class="album-cover" src={{item.images[1].url}} alt="album art" routerLink="/album">
+               <img mat-card-image class="album-cover" src={{item.images[1].url}} alt="album art" routerLink="/album/:id">
                <strong>Release Date: </strong>{{item.release_date}}<br />
                <strong>Tracks: </strong>{{item.total_tracks}}<br /><br />
                <mat-card-content>
-                   <mat-chip-list aria-label="Artist selection" routerLink="/artist">
+                   <mat-chip-list aria-label="Artist selection" routerLink="/artist/:id">
                        <mat-chip *ngFor="let artist of item.artists">{{artist.name}}</mat-chip>
                    </mat-chip-list>
                </mat-card-content>
